@@ -1,9 +1,18 @@
 button {
-  background-color: blue;
-  color: white;
+  background-color: yellow;
+  color: #7A6F6D;
   cursor: pointer;
   padding: 15px;
-  display: block;
+  display: inline-block;
   margin: 30px;
-  width: 200px;
+  width: 600px;
+  font-size: 45px;
+  border-radius: 80px 20px;
+}
+
+
+body {
+  background-color: #7A6F6D;
+  /* display: inline-block; */
+  /* display: layout() */
 }

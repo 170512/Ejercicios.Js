@@ -175,3 +175,103 @@ function two_players() {
 //   } else if (tiro_1P == "tijeras" && tiro_2P == "piedra") {
 //     console.log("tiro_1P: " + tiro_1P + ", tiro_2p: " + tiro_2P + ": ")
 //   }
+
+// -------------------------------------------------------------------------------------
+
+// Suseción de Fibonacci
+// function fibonacci() {
+//   let numero = Number(prompt("¿Hasta que numero quieres saber la Sucesión de Fibonacci?"));
+
+  // let numA = 0;
+  // let numB = 1;
+  // let numC = numA + numB; //1
+  // let numD = numC + numB;  // 2
+  // let numE = numD + numC;  // 3
+
+  // numA = "coche"
+
+//   for(let contador = 0; contador <= numero; contador+=1)
+//
+//   let vars = (numA = 0, numB = 1, numC = numA + numB); {
+//       console.log(vars)
+//   }
+//   let resultado = (numA = numA + numB, numB = numB + numC, numC = numA + numB); {
+//      console.log(resultado)
+//    }
+// }
+
+function fibonacci(){
+  let Elemento = Number(prompt("¿Hasta que numero quieres llegar en la suseción de fibonacci?"));
+
+  let f0 = 0;
+  let f1 = 1;
+  let f;
+
+  for (var n = 0; n <= Elemento; n++) {
+    if (n == 0) {
+      console.log("El elemento 1 de la serie es: 0");
+    }
+    if (n == 1) {
+      console.log("El elemento 2 de la serie es: 1");
+    }
+    if (n > 1) {
+      f = f0 + f1;
+      console.log("El elemento " + n + " de la serie es: " + f);
+      f0 = f1;
+      f1 = f;
+    }
+  }
+}
+
+//------------------------------------------------------------------------------
+ // Typos de Datos
+function mascotas() {
+  let mascotas = ['perro', 'gato', 'perico', 'hamster', 'elefante']; //5
+  // | | | | | | | | //0         1       2          3           4
+  for(let i = 0; i < mascotas.lenght; i++) {
+   console.log(mascotas[i], 'vuelta ' + i );
+   mascota[0] = 'lobo'; //Reasiganr una posicion especifica de un array
+   mascotas[1]; //Seleccionar cada elemeto de un array
+  }
+}
+
+//-----------------------------------------------------------------------------
+ // Encriptar contraseña
+function contraseña() {
+  let contraseña = prompt("Escribe tu contraseña"); {
+    console.log(contraseña);
+  }
+  contraseña = contraseña.split(''); // Convertir un string en un array
+  for(let i = 0; i <= contraseña.length; i+= 1) {
+    // console.log(contraseña[i]);
+
+    if (contraseña[i] == "a") {
+      contraseña[i] = 4;
+    } else if (contraseña[i] == "e") {
+      contraseña[i] = 3;
+    } else if (contraseña[i] == "i") {
+      contraseña[i] = 1;
+    } else if (contraseña[i] == "o") {
+      contraseña[i] = 0;
+    } else if (contraseña[i] == "t") {
+      contraseña[i] = 7;
+    } else if (contraseña[i] == "s") {
+      contraseña[i] = 5;
+    }
+  }
+    contraseña = contraseña.join('');  // (/,/g;"")
+    contraseña = contraseña.toString();
+    console.log(contraseña);
+}
+
+
+ // var vocales =
+ //   let a = 4;
+ //   let e = 3;
+ //   let i = 1;
+ //   let o = 0;
+ //   let t = 7;
+
+ // input = "Hola amigos esta es mi contraseña"
+ // output = "h0l4 4m1g0s 3s74 3s m1 c0n7r4s3ñ4"
+// }
