@@ -1,13 +1,13 @@
-button {
+.tarjeta {
   background-color: yellow;
   color: #7A6F6D;
-  cursor: pointer;
   padding: 15px;
   display: inline-block;
-  margin: 30px;
-  width: 600px;
-  font-size: 45px;
-  border-radius: 80px 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 15px;
+  vertical-align: top;
 }
 
 
@@ -15,4 +15,56 @@ body {
   background-color: #7A6F6D;
   /* display: inline-block; */
   /* display: layout() */
+  font-family: arial;
+}
+
+.buttons {
+  cursor: pointer;
+  background-color: #7A6F6D;
+  color: yellow;
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+  width: 200px;
+
+}
+
+.imgRegaño {
+  width: 150px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.imgSuper {
+  width: 100px;
+  margin: 15px;
+}
+
+.imgGym {
+  width: 187px;
+}
+
+.imgPpt {
+  width: 200px;
+}
+
+.imgFibonacci {
+  width: 160px;
+}
+
+.imgEncripta {
+  width: 100px;
+}
+
+.imgPalindromo {
+  width: 103px;
+}
+
+.imgDormir {
+  width: 155px;
+  margin: 5px;
+}
+
+.imgHistoria {
+  width: 165px
 }

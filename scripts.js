@@ -268,10 +268,76 @@ function contraseña() {
  // var vocales =
  //   let a = 4;
  //   let e = 3;
- //   let i = 1;
+ //   let i = 1;|
  //   let o = 0;
  //   let t = 7;
 
  // input = "Hola amigos esta es mi contraseña"
  // output = "h0l4 4m1g0s 3s74 3s m1 c0n7r4s3ñ4"
 // }
+
+
+//------------------------------------------------------------------------------
+// Palindrono
+
+function palindromo() {
+  let frase = prompt("Escribe tu frase:"); {
+    console.log(frase);
+    let fraseSinEspacios = fraseSinEspacios.replace(/ /g, '');
+    console.log(fraseSinEspacios);
+    let fraseEnMinusculas = fraseEnMinusculas.toLowerCase();
+    console.log(fraseEnMinusculas);
+
+  for(let i = 0; i < fraseEnMinusculas.length; i++) {
+    console.log(faseEnMinusculas[i]);
+  }
+}
+}
+
+// function objectToArray(array) {
+//   let finalObject = {};
+//
+//   for (let i = 0; i < array.length; i++){
+//     const node = array[i];
+//     const key = node.key1
+//     const value = node.value;
+//     // let testObject = {};
+//     finalObject[key] = value;
+//     // console.log(testObject);
+//   }
+//
+//   return finalObject;
+// }
+//
+// // IMPUT.
+//
+// {
+//     key1: 'gama',
+//     value1: '22'
+// }
+// {
+//     key2: 'magda',
+//     value2: '20'
+// }
+//
+// // OUTPUT:
+// {
+//     key1: value1,
+//     key2: value2,
+//     ...
+// }
+
+
+const historiaBoton = document.querySelector('#historia-boton');
+const historiaNombre = document.querySelector('#nombre');
+const historyBox = document.querySelector('#history-box');
+
+historiaBoton.addEventListener('click', generateHistory);
+
+function generateHistory() {
+  event.preventDefault();
+  let nombre = historiaNombre.value;
+  let history = "hola, mi nombre es " + nombre + ", y esta es mi historia";
+
+  historyBox.innerHTML = history;
+}

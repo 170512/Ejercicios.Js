@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,15 +6,78 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <button onclick="Horas_de_sueño()">Horas de Sueño</button>
-    <button onclick="Regaño()">Regaño</button>
-    <button onclick="lista_del_super()">Lista del Super</button>
-    <button onclick="peso_ideal()">Tu peso ideal</button>
-    <button onclick="compu()">Piedra, papel o tijeras VS Compu</button>
-    <button onclick="two_players()">Piedra, Papel o Tijeras (1P VS 2P)</button>
-    <button onclick="fibonacci()">Suseción de Fibonacci</button>
-    <button onclick="mascotas()">Mascotas</button>
-    <button onclick="contraseña()">Encriptar contraseña</button>
-    <script src="scripts.js"></script>
+       <!-- <article class="tarjeta">
+        <<h3 class="titulo"> -->
+      <article class="tarjeta">
+        <h3 class="titulo">Lo que escribio como castigo</h3>
+        <img class="imgRegaño" src="https://i.ytimg.com/vi/dvWotLyBaDQ/mqdefault.jpg">
+        <button class="buttons" onclick="Regaño()">Regaño</button>
+      </article>
+
+      <article class="tarjeta">
+        <h3 class="titulo">Calcula el total de tu super</h3>
+        <img class="imgSuper" src="https://cdn.pixabay.com/photo/2013/07/12/14/53/cart-148964_960_720.png">
+        <button class="buttons" onclick="lista_del_super()">Lista del Super</button>
+      </article>
+
+      <article class="tarjeta">
+        <h3 class="titulo">Paso a paso lo que tienes que hacer</h3>
+        <img class="imgGym" src="https://previews.123rf.com/images/sergeypykhonin/sergeypykhonin1702/sergeypykhonin170200146/72304532-mancuerna-pesada-en-la-mano-dibujos-animados-gimnasio-culturismo-levantamiento-de-pesas-s%C3%ADmbolo-ilustr.jpg">
+        <button class="buttons" onclick="peso_ideal()">Tu peso ideal</button>
+      </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">Juega contra la compu</h3>
+          <img class="imgPpt" src="https://i0.wp.com/www.encuentos.com/wp-content/uploads/2014/11/piedra-papel-y-tijera-1.png?fit=487%2C300&ssl=1">
+          <button class="buttons" onclick="compu()">¡Juega ahora!</button>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">juega contra alguien</h3>
+          <img class="imgPpt" src="https://i0.wp.com/www.encuentos.com/wp-content/uploads/2014/11/piedra-papel-y-tijera-1.png?fit=487%2C300&ssl=1">
+          <button class="buttons" onclick="two_players()">¡Jueguen ahora!</button>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">¿Hasta que numero quieres saber?</h3>
+          <img class="imgFibonacci" src="https://cdn.pixabay.com/photo/2016/08/17/18/05/fibonacci-1601158_960_720.png">
+          <button class="buttons" onclick="fibonacci()">Suseción de Fibonacci</button>
+        </article>
+
+        <!-- <article class="tarjeta">
+          <button onclick="mascotas()">Mascotas</button>
+          <h3 class="titulo"></h3>
+        </article> -->
+
+        <article class="tarjeta">
+          <h3 class="titulo">Encripta tu contraseña</h3>
+          <img class="imgEncripta" src="data:image/jpeg;base64,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">
+          <button class="buttons" onclick="contraseña()">Encriptar contraseña</button>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">Palindromo</h3>
+          <img class="imgPalindromo" src="https://previews.123rf.com/images/prettyvectors/prettyvectors1607/prettyvectors160700093/60134269-pensando-car%C3%A1cter-del-hombre-vector-ilustraci%C3%B3n-de-dibujos-animados-plana.jpg">
+          <button class="buttons" onclick="palindromo()">Ingresa tu palabra o frase</button>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">Calcula cuantas horas dormiste</h3>
+          <img class="imgDormir" src="https://static.betazeta.com/www.fayerwayer.com/up/2016/08/Patricio-960x623.jpg">
+          <button class="buttons" onclick="Horas_de_sueño()">Horas de Sueño</button>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="titulo">Crea tu historia</h3>
+          <img class="imgHistoria" src="https://escritoresnoveles.files.wordpress.com/2015/11/pluma_tintero_y_papel.png">
+          <form action="">
+            <input id="nombre" type="text">
+            <label for="nombre">¿Como te llamas?:</label>
+            <button id="historia-boton" type="submit">Empieza tu historia</button>
+          </form>
+          <p id="history-box">Lugar de la historia</p>
+        </article>
+        
+      <script src="scripts.js"></script>
   </body>
 </html>
